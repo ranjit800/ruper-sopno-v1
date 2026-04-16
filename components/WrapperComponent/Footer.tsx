@@ -23,22 +23,25 @@ const Footer = () => {
         <div className="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 text-left">
           
           {/* Column 1: Links Collection */}
-          <div className="flex flex-col space-y-5 md:space-y-6">
+          <div className="flex flex-col space-y-4 md:space-y-5">
             {[
-              "New Arrivals",
-              "About",
-              "Kurti",
-              "Salwar Suit",
-              "Saree",
-              "Night Gown",
-              "Home Essentials"
-            ].map((text, idx) => (
+              { name: "Home", href: "/" },
+              { name: "All Products", href: "/all-product" },
+              { name: "New Arrivals", href: "/new-arrivals" },
+              { name: "Sarees", href: "/sarees" },
+              { name: "Kurti", href: "/kurti" },
+              { name: "Salwar Suit", href: "/salwar-suit" },
+              { name: "Night Gown", href: "/night-gown" },
+              { name: "Home Essentials", href: "/home-essentials" },
+              { name: "About Us", href: "/about-us" },
+              { name: "Contact Us", href: "/contact-us" }
+            ].map((link, idx) => (
               <Link 
                 key={idx} 
-                href="#" 
+                href={link.href} 
                 className="text-[#CDA277] hover:text-white transition-colors duration-300 font-light tracking-[0.08em] font-['Acumin_Variable_Concept',sans-serif]"
               >
-                {text}
+                {link.name}
               </Link>
             ))}
           </div>
