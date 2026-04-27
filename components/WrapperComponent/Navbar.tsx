@@ -3,8 +3,9 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Logo from "@/public/accests/images/Logo.png";
-import SecondLogo from "@/public/accests/images/secondLogo.png";
+import Logo from "@/public/accests/images/RsvLogoFix.svg";
+import SecondLogo from "@/public/accests/images/RsvLogoFixv2.svg"
+import { Menu, X } from "lucide-react";
 
 
 const Navbar = () => {
@@ -58,10 +59,11 @@ const Navbar = () => {
               <Image
                 src={logoSrc}
                 alt="Ruper Sopno Vastra Logo"
-                width={250}
-                height={60}
-                className="h-12 w-auto object-contain"
+                width={300}
+                height={80}
+                className="h-14 md:h-16 w-auto object-contain"
                 priority
+                // unoptimized
               />
             </Link>
           </div>
@@ -114,33 +116,9 @@ const Navbar = () => {
               className={`${menuIconClass} hover:opacity-80 focus:outline-none transition-colors`}
             >
               {isMobileMenuOpen ? (
-                <svg
-                  className="h-8 w-8"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
+                <X className="h-8 w-8" />
               ) : (
-                <svg
-                  className="h-8 w-8"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
-                </svg>
+                <Menu className="h-8 w-8" />
               )}
             </button>
           </div>

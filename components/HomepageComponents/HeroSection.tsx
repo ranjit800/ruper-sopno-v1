@@ -17,7 +17,7 @@ const HeroSection = () => {
           priority
         />
         {/* Subtle Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-black/20 z-10"></div>
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
         
         {/* Centered Content inside the Image div */}
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
