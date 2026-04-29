@@ -21,7 +21,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 w-full max-w-4xl mx-auto space-y-6">
-        <h1 className="text-4xl md:text-5xl lg:text-[56px] font-medium tracking-[0.25em] text-[#E5DCD3] uppercase drop-shadow-md">
+        <h1 className="text-4xl md:text-5xl lg:text-[56px] font-['Brygada_1918'] font-medium tracking-[0.25em] text-[#E5DCD3] uppercase drop-shadow-md">
           All Products
         </h1>
         <p className="text-[#E5DCD3] text-base md:text-lg lg:text-xl tracking-wider font-light drop-shadow">
