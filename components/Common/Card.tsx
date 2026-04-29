@@ -20,7 +20,7 @@ const Card: React.FC<CardProps> = ({
   bottomTitle,
   bottomDescription,
   price,
-  imageWrapperClassName = "w-[320px] h-[500px]",
+  imageWrapperClassName = "w-full aspect-[16/25] max-w-[320px]",
   onButtonClick, 
   priority = false 
 }) => {
@@ -40,7 +40,7 @@ const Card: React.FC<CardProps> = ({
         {/* Center Text Overlay */}
         {centerText && (
           <div className="absolute inset-0 flex items-center justify-center p-6 text-center select-none pointer-events-none">
-            <h3 className="text-[#FFD700] text-lg lg:text-[19px] font-bold uppercase tracking-[0.1em] leading-snug drop-shadow-lg whitespace-pre-line">
+            <h3 className="text-[#FFD700] text-[11px] sm:text-sm md:text-lg lg:text-[19px] font-bold uppercase tracking-[0.1em] leading-snug drop-shadow-lg whitespace-pre-line font-['Brygada_1918']">
               {centerText}
             </h3>
           </div>
@@ -51,17 +51,17 @@ const Card: React.FC<CardProps> = ({
       {(bottomTitle || bottomDescription || price) && (
         <div className="mt-5 flex flex-col items-center text-center space-y-1.5 px-2">
           {bottomTitle && (
-            <h4 className="text-[#6E2814] text-[15px] font-bold uppercase tracking-widest leading-snug whitespace-pre-line">
+            <h4 className="text-[#6E2814] text-[11px] sm:text-sm md:text-[15px] font-bold uppercase tracking-widest leading-snug whitespace-pre-line font-['Brygada_1918']">
               {bottomTitle}
             </h4>
           )}
           {bottomDescription && (
-            <p className="text-[#6E2814] text-[10px] leading-relaxed max-w-[260px] font-medium">
+            <p className="text-[#6E2814] text-[9px] sm:text-[10px] leading-relaxed max-w-[260px] font-medium line-clamp-2 sm:line-clamp-none">
               {bottomDescription}
             </p>
           )}
           {price && (
-            <p className="text-[#6E2814] text-[15px] font-bold tracking-widest pt-1">
+            <p className="text-[#6E2814] text-[12px] sm:text-sm md:text-[15px] font-bold tracking-widest pt-1">
               {price}
             </p>
           )}
@@ -71,7 +71,7 @@ const Card: React.FC<CardProps> = ({
       {/* Button */}
       <button 
         onClick={onButtonClick}
-        className="mt-4 bg-[#D08740] hover:bg-[#B37032] text-white px-8 py-2 rounded-full text-[15px] font-medium tracking-wide transition-colors"
+        className="mt-3 md:mt-4 bg-[#D08740] hover:bg-[#B37032] text-white px-5 py-1.5 md:px-8 md:py-2 rounded-full text-[11px] md:text-[15px] font-medium tracking-wide transition-colors"
       >
         {buttonText}
       </button>

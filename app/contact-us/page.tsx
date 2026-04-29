@@ -3,7 +3,7 @@ import React from 'react'
 const ContactUsPage = () => {
   return (
     <div className="min-h-screen bg-[#E5DCCF] pt-24 pb-24 px-4 flex flex-col items-center">
-      <h1 className="text-center text-[#6E2814] text-3xl md:text-[42px] font-medium tracking-[0.2em] uppercase mb-16">
+      <h1 className="text-center text-[#6E2814] text-3xl md:text-4xl lg:text-[42px] font-medium tracking-[0.2em] uppercase mb-16 font-['Brygada_1918']">
         Contact Us
       </h1>
 

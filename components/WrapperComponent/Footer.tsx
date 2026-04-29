@@ -38,7 +38,7 @@ const Footer = () => {
               <Link
                 key={idx}
                 href={link.href}
-                className="text-[#CDA277] hover:text-white transition-colors duration-300 font-light tracking-[0.08em] font-['Acumin_Variable_Concept',sans-serif]"
+                className="text-[#CDA277] hover:text-white transition-colors duration-300 font-light tracking-[0.08em]"
               >
                 {link.name}
               </Link>
@@ -47,14 +47,14 @@ const Footer = () => {
 
           {/* Column 2: Contact Info */}
           <div className="flex flex-col space-y-6 md:space-y-8">
-            <h3 className="text-[#CDA277] text-lg tracking-[0.08em] font-['Acumin_Variable_Concept',sans-serif]">Contact</h3>
+            <h3 className="text-[#CDA277] text-lg tracking-[0.08em] font-['Brygada_1918']">Contact</h3>
 
             <div className="space-y-6">
               {/* Address */}
               <div className="flex items-start gap-3">
                 <MapPin className="w-[1.125rem] h-[1.125rem] mt-1 shrink-0 text-[#CDA277]" />
-                <p className="text-[#CDA277] font-light tracking-[0.05em] leading-loose text-[0.95rem] font-['Acumin_Variable_Concept',sans-serif]">
-                  3517 W. Gray St. Utica, <br /> Pennsylvania 57867
+                <p className="text-[#CDA277] font-light tracking-[0.05em] leading-loose text-[0.95rem]">
+                  177 Roynagar Place, <br /> kol - 700070
                 </p>
               </div>
 
@@ -62,10 +62,10 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Mail className="w-[1.125rem] h-[1.125rem] shrink-0 text-[#CDA277]" />
                 <a
-                  href="mailto:info@instax.com"
-                  className="text-[#CDA277] tracking-[0.05em] hover:text-white transition-colors duration-300 font-light text-[0.95rem] font-['Acumin_Variable_Concept',sans-serif]"
+                  href="mailto:rupasree184@gmail.com"
+                  className="text-[#CDA277] tracking-[0.05em] hover:text-white transition-colors duration-300 font-light text-[0.95rem]"
                 >
-                  info@instax.com
+                  rupasree184@gmail.com
                 </a>
               </div>
 
@@ -73,10 +73,10 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Phone className="w-[1.125rem] h-[1.125rem] shrink-0 text-[#CDA277]" />
                 <a
-                  href="tel:2195550114"
-                  className="text-[#CDA277] tracking-[0.05em] hover:text-white transition-colors duration-300 font-light text-[0.95rem] font-['Acumin_Variable_Concept',sans-serif]"
+                  href="tel:+918282981727"
+                  className="text-[#CDA277] tracking-[0.05em] hover:text-white transition-colors duration-300 font-light text-[0.95rem]"
                 >
-                  (219) 555-0114
+                  +91 8282 9817 27
                 </a>
               </div>
             </div>
@@ -84,18 +84,18 @@ const Footer = () => {
 
           {/* Column 3: Follow Us */}
           <div className="flex flex-col space-y-6 md:space-y-8">
-            <h3 className="text-[#CDA277] text-lg tracking-[0.08em] font-['Acumin_Variable_Concept',sans-serif]">Follow Us</h3>
+            <h3 className="text-[#CDA277] text-lg tracking-[0.08em] font-['Brygada_1918']">Follow Us</h3>
             <div className="flex items-center gap-5">
               {/* Instagram */}
-              <a href="#" className="hover:-translate-y-1 transition-all duration-300 relative w-[1.25rem] h-[1.25rem]">
+              <a href="https://www.instagram.com/ruper.sopno.vastra" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-1 transition-all duration-300 relative w-[1.25rem] h-[1.25rem]">
                 <Image src={insta} alt="Instagram" fill className="object-contain" />
               </a>
               {/* Facebook */}
-              <a href="#" className="hover:-translate-y-1 transition-all duration-300 relative w-[1.25rem] h-[1.25rem]">
+              <a href="https://www.facebook.com/search/top?q=Ruper%20Sopno%20Vastra" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-1 transition-all duration-300 relative w-[1.25rem] h-[1.25rem]">
                 <Image src={face} alt="Facebook" fill className="object-contain" />
               </a>
               {/* WhatsApp */}
-              <a href="#" className="hover:-translate-y-1 transition-all duration-300 relative w-[1.25rem] h-[1.25rem]">
+              <a href="https://wa.me/918282981727" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-1 transition-all duration-300 relative w-[1.25rem] h-[1.25rem]">
                 <Image src={whats} alt="WhatsApp" fill className="object-contain" />
               </a>
             </div>

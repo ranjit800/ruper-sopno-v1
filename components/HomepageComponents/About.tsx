@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import AboutImg from '@/public/accests/images/AboutImages/AboutSectionImg.png'
 
 const About = () => {
@@ -9,7 +10,7 @@ const About = () => {
           
           {/* Left Side content (50%) */}
           <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left space-y-8">
-            <h2 className="text-[#E2B06F] text-3xl md:text-5xl lg:text-6xl font-serif tracking-tight leading-tight">
+            <h2 className="text-[#E2B06F] text-3xl md:text-4xl lg:text-[42px] font-['Brygada_1918'] tracking-tight leading-tight">
               About Ruper Sopno Vastra
             </h2>
             
@@ -22,9 +23,9 @@ const About = () => {
             </p>
             
             <div className="pt-4">
-              <button className="px-12 py-3.5 bg-[#d38d48] hover:bg-[#c47e3a] text-white text-lg md:text-xl font-serif rounded-full transition-all duration-300 shadow-2xl active:scale-95">
+              <Link href="/about-us" className="inline-block px-12 py-3.5 bg-[#d38d48] hover:bg-[#c47e3a] text-white text-lg md:text-xl rounded-full transition-all duration-300 shadow-2xl active:scale-95">
                 Know More
-              </button>
+              </Link>
             </div>
           </div>
 

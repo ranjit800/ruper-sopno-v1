@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import HeroBg from "@/public/accests/images/HeroImg_w2.webp";
 
 const HeroSection = () => {
@@ -28,9 +29,9 @@ const HeroSection = () => {
             </h1>
             
             <div className="pt-8">
-              <button className="px-12 py-4 bg-[#d38d48] hover:bg-[#c47e3a] text-white text-lg md:text-xl font-serif rounded-full transition-all duration-300 shadow-xl active:scale-95">
+              <Link href="/all-product" className="inline-block px-12 py-4 bg-[#d38d48] hover:bg-[#c47e3a] text-white text-lg md:text-xl font-serif rounded-full transition-all duration-300 shadow-xl active:scale-95">
                 shop now
-              </button>
+              </Link>
             </div>
           </div>
         </div>

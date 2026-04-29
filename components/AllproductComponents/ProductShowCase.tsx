@@ -1,6 +1,8 @@
+'use client';
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import Card from '@/components/Common/Card'
 
 import kurti1 from '@/public/accests/images/KurtiImgs/kurtiImg1.png'
@@ -33,23 +35,25 @@ const categories = [
 ];
 
 const products = [
-  { id: 1, image: kurti1, centerText: "SUNSET OCHRE\nMINIMALIST KURTI" },
-  { id: 2, image: kurti2, centerText: "INDIGO ARTISAN\nA-LINE KURTI" },
-  { id: 3, image: kurti3, centerText: "ROYAL EMERALD\nZARI KURTI" },
-  { id: 4, image: nightwear1, centerText: "DEEP SUNSET OCHRE" },
-  { id: 5, image: nightwear2, centerText: "DEEP SUNSET OCHRE" },
-  { id: 6, image: nightwear3, centerText: "DEEP SUNSET OCHRE" },
-  { id: 7, image: saree1, centerText: "VINTAGE FLORAL\nART SILK SAREE" },
-  { id: 8, image: saree2, centerText: "MIDNIGHT BLUE\nGEORGETTE SAREE" },
-  { id: 9, image: saree3, centerText: "CRIMSON RED\nFESTIVE SAREE" },
-  { id: 10, image: salwar1, centerText: "PASTEL PINK\nCOTTON SALWAR" },
-  { id: 11, image: salwar2, centerText: "ELEGANT WHITE\nEMBROIDERED SUIT" },
-  { id: 12, image: salwar3, centerText: "ROYAL BLUE\nSTRAIGHT CUT" },
-  { id: 13, image: homeAcc1, centerText: "LUXURY LINEN\nBEDCOVER" },
-  { id: 14, image: homeAcc2, centerText: "AESTHETIC\nCUSHION SET" },
+  { id: 1, image: kurti1, centerText: "SUNSET OCHRE\nMINIMALIST KURTI", href: "/kurti" },
+  { id: 2, image: kurti2, centerText: "INDIGO ARTISAN\nA-LINE KURTI", href: "/kurti" },
+  { id: 3, image: kurti3, centerText: "ROYAL EMERALD\nZARI KURTI", href: "/kurti" },
+  { id: 4, image: nightwear1, centerText: "DEEP SUNSET OCHRE", href: "/night-gown" },
+  { id: 5, image: nightwear2, centerText: "DEEP SUNSET OCHRE", href: "/night-gown" },
+  { id: 6, image: nightwear3, centerText: "DEEP SUNSET OCHRE", href: "/night-gown" },
+  { id: 7, image: saree1, centerText: "VINTAGE FLORAL\nART SILK SAREE", href: "/sarees" },
+  { id: 8, image: saree2, centerText: "MIDNIGHT BLUE\nGEORGETTE SAREE", href: "/sarees" },
+  { id: 9, image: saree3, centerText: "CRIMSON RED\nFESTIVE SAREE", href: "/sarees" },
+  { id: 10, image: salwar1, centerText: "PASTEL PINK\nCOTTON SALWAR", href: "/salwar-suit" },
+  { id: 11, image: salwar2, centerText: "ELEGANT WHITE\nEMBROIDERED SUIT", href: "/salwar-suit" },
+  { id: 12, image: salwar3, centerText: "ROYAL BLUE\nSTRAIGHT CUT", href: "/salwar-suit" },
+  { id: 13, image: homeAcc1, centerText: "LUXURY LINEN\nBEDCOVER", href: "/home-essentials" },
+  { id: 14, image: homeAcc2, centerText: "AESTHETIC\nCUSHION SET", href: "/home-essentials" },
 ];
 
 const ProductShowCase = () => {
+  const router = useRouter();
+
   return (
     <section className="bg-[#6e2814] w-full py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto space-y-16">
@@ -72,13 +76,14 @@ const ProductShowCase = () => {
         </nav>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-8 justify-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-3 sm:gap-x-8 sm:gap-y-16 justify-items-center">
           {products.map((product) => (
             <Card 
               key={product.id} 
               imageSrc={product.image} 
               buttonText="View More" 
               centerText={product.centerText}
+              onButtonClick={() => router.push(product.href)}
             />
           ))}
         </div>

@@ -48,7 +48,7 @@ const Review = () => {
       <div className="container relative z-10 mx-auto px-6 md:px-12 lg:px-24 flex flex-col items-center">
         
         {/* Title */}
-        <h2 className="text-[#DEAF79] text-3xl md:text-4xl tracking-[0.25em] font-normal mb-16 uppercase font-['Acumin_Variable_Concept',sans-serif]">
+        <h2 className="text-[#DEAF79] text-3xl md:text-4xl lg:text-[42px] tracking-[0.25em] font-normal mb-16 uppercase font-['Brygada_1918']">
           Client Love
         </h2>
 
@@ -82,12 +82,12 @@ const Review = () => {
                   </div>
 
                   {/* Review Text */}
-                  <p className="text-[#DEAF79]/90 font-light text-base md:text-[1.05rem] leading-[1.8] mb-12 font-['Acumin_Variable_Concept',sans-serif] tracking-[0.03em] flex-grow">
+                  <p className="text-[#DEAF79]/90 font-light text-base md:text-[1.05rem] leading-[1.8] mb-12 tracking-[0.03em] flex-grow">
                     {review.text}
                   </p>
 
                   {/* Reviewer Name */}
-                  <h4 className="text-[#DEAF79] font-medium tracking-[0.1em] uppercase text-sm mt-auto font-['Acumin_Variable_Concept',sans-serif]">
+                  <h4 className="text-[#DEAF79] font-medium tracking-[0.1em] uppercase text-sm mt-auto">
                     {review.name}
                   </h4>
                 </div>

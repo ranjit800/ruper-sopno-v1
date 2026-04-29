@@ -6,11 +6,11 @@ const AboutUsPage = () => {
   return (
     <div className="min-h-screen bg-[#E5DCCF] pt-16 pb-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto space-y-12">
-        <h1 className="text-center text-[#6E2814] text-3xl md:text-5xl font-medium tracking-[0.2em] uppercase">
+        <h1 className="text-center text-[#6E2814] text-3xl md:text-4xl lg:text-[42px] font-medium tracking-[0.2em] uppercase font-['Brygada_1918']">
           About Us
         </h1>
 
-        <div className="text-center text-[#6E2814] text-sm md:text-[15px] leading-snug sm:leading-relaxed tracking-wide font-medium">
+        <div className="text-center text-[#6E2814] text-sm md:text-[18px] leading-snug sm:leading-relaxed tracking-wide font-medium">
           
           <p className="max-w-[1000px] mx-auto text-justify sm:text-center">
             Founded in 2006, <span className="font-bold">Ruper Sopno Vastra</span> began simply from a genuine passion for clothing and a personal desire 

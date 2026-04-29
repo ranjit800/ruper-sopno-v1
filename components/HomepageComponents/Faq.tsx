@@ -29,7 +29,7 @@ const Faq = () => {
       <div className="container mx-auto flex flex-col items-center">
         
         {/* Heading */}
-        <h2 className="text-[#6C2513] text-3xl md:text-5xl tracking-[0.15em] mb-12 font-['Acumin_Variable_Concept',sans-serif]">
+        <h2 className="text-[#6C2513] text-3xl md:text-4xl lg:text-[42px] tracking-[0.15em] mb-12 font-['Brygada_1918']">
           FAQ
         </h2>
 
@@ -48,7 +48,7 @@ const Faq = () => {
                   onClick={() => toggleAccordion(index)}
                   className="w-full flex items-center justify-between px-6 md:px-8 py-5 text-left focus:outline-none"
                 >
-                  <span className="text-[#6C2513] text-lg md:text-xl font-light tracking-wide font-['Acumin_Variable_Concept',sans-serif]">
+                  <span className="text-[#6C2513] text-lg md:text-xl font-light tracking-wide">
                     {faq.question}
                   </span>
                   
@@ -72,7 +72,7 @@ const Faq = () => {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <div className="px-6 md:px-8 pb-6 text-[#6C2513]/80 font-light text-base md:text-lg leading-relaxed font-['Acumin_Variable_Concept',sans-serif]">
+                    <div className="px-6 md:px-8 pb-6 text-[#6C2513]/80 font-light text-base md:text-lg leading-relaxed">
                       {faq.answer}
                     </div>
                   </div>
