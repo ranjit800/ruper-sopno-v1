@@ -56,7 +56,7 @@ const Card: React.FC<CardProps> = ({
             </h4>
           )}
           {bottomDescription && (
-            <p className="text-[#6E2814] text-[9px] sm:text-[10px] leading-relaxed max-w-[260px] font-medium line-clamp-2 sm:line-clamp-none">
+            <p className="text-[#6E2814] text-[11px] sm:text-xs md:text-[14px] leading-relaxed max-w-[260px] font-medium line-clamp-2 sm:line-clamp-none">
               {bottomDescription}
             </p>
           )}
